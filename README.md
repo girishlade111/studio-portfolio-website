@@ -1,36 +1,153 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Studio Portfolio Website
+
+A modern, responsive portfolio website built with Next.js 15 and React 19. Features smooth animations, custom cursor, and professional studio design.
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **UI Utilities**: clsx, tailwind-merge
+
+## Features
+
+### Core Components
+- **Custom Cursor** - Interactive custom cursor that follows mouse movement with smooth animations
+- **Navbar** - Responsive navigation with smooth scroll to sections
+- **Hero** - Landing section with animated text and call-to-action
+- **Expertise** - Professional services/skill showcase with cards
+- **Stats** - Animated statistics display with counters
+- **Selected Projects** - Portfolio gallery with hover effects
+- **Pricing** - Pricing plans display with tiers
+- **Testimonials** - Client reviews carousel
+- **FAQ** - Frequently asked questions accordion
+- **Footer** - Contact info, social links, and copyright
+
+### Highlights
+- Smooth page transitions with Framer Motion
+- Custom animated cursor effect
+- Fully responsive design for all devices
+- Dark-themed professional aesthetic
+- Interactive hover effects on all interactive elements
+- Accessible semantic HTML structure
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+ 
+- npm / yarn / pnpm / bun
+
+### Installation
 
 ```bash
-npm run dev
+# Clone the repository
+git clone https://github.com/girishlade111/studio-portfolio-website.git
+
+# Navigate to project directory
+cd studio-portfolio-website
+
+# Install dependencies
+npm install
 # or
-yarn dev
+yarn install
 # or
-pnpm dev
+pnpm install
 # or
-bun dev
+bun install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Start development server
+npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Open in browser
+http://localhost:3000
+```
 
-## Learn More
+### Build & Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Create production build
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Start production server
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```
+portfolio3/
+├── src/
+│   ├── app/
+│   │   ├── globals.css     # Global styles
+│   │   ├── layout.tsx      # Root layout
+│   │   └── page.tsx        # Main page
+│   └── components/
+│       ├── CustomCursor.tsx
+│       ├── Expertise.tsx
+│       ├── Faq.tsx
+│       ├── Footer.tsx
+│       ├── Hero.tsx
+│       ├── Navbar.tsx
+│       ├── Pricing.tsx
+│       ├── SelectedProjects.tsx
+│       ├── Stats.tsx
+│       └── Testimonials.tsx
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+├── tailwind.config.ts
+└── postcss.config.mjs
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Configuration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Environment Variables
+Create a `.env.local` file for local configuration:
+```bash
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
+
+### Tailwind CSS
+Configuration found in `globals.css` using CSS-based config for v4.
+
+### ESLint
+Pre-configured with Next.js ESLint configuration.
+
+## Stats
+
+- **Components**: 10 interactive components
+- **Files Modified**: 18 files
+- **Lines Added**: 923 insertions
+- **Lines Removed**: 98 deletions
+
+## Deployment
+
+### Vercel (Recommended)
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+### Other Platforms
+- Netlify
+- Railway
+- Render
+- AWS Amplify
+
+## License
+
+MIT License
+
+## Author
+
+**Girish Lade**
+- GitHub: [@girishlade111](https://github.com/girishlade111)
